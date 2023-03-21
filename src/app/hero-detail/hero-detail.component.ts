@@ -20,6 +20,7 @@ export class HeroDetailComponent {
 
   ngOnInit(): void {
     this.getHero();
+    console.log(this.heroService.getHero(Number(this.route.snapshot.paramMap.get('id'))));
   }
 
   save(): void {

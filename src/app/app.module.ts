@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
@@ -11,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { HeroFormComponent } from './hero-form/hero-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,9 +21,11 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     MessagesComponent,
     DashboardComponent,
     HeroSearchComponent,
+    HeroFormComponent,
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     FormsModule,
     AppRoutingModule,
     HttpClientModule,

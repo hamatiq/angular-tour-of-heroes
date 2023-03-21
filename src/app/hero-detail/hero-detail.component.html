@@ -6,6 +6,14 @@
       <label for="hero-name">Hero name: </label>
       <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
     </div>
+    <div>
+      <label for="hero-power">Hero power: </label>
+      <input id="hero-power" [(ngModel)]="hero.power" placeholder="power">
+    </div>
+    <div>
+      <label for="hero-alterEgo">Hero Alter Ego: </label>
+      <input id="hero-alterEgo" [(ngModel)]="hero.alterEgo" placeholder="Alter Ego">
+    </div>
 </div>
 <button type="button" (click)="goBack()">go back</button>
 <button type="button" (click)="save()">save</button>
